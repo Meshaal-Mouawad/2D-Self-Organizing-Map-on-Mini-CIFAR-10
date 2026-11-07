@@ -1,0 +1,24 @@
+{
+  "status": "preprocessing_frozen",
+  "dataset": "CIFAR-10 official Python batches",
+  "training_pool": 45000,
+  "development_set": 5000,
+  "test_partition": "reserved",
+  "pixel_normalization": "float32 / 255.0",
+  "rgb_representation": "training-mean-centered",
+  "pca_representation": {
+    "components": 64,
+    "fit_partition": "training subset only",
+    "randomized_svd": true
+  },
+  "prototype_count": 16,
+  "methods": [
+    "som",
+    "winner",
+    "random",
+    "kmeans++"
+  ],
+  "split_sha256": "17c764251b013c1d09ef4fe5ccff301db48c8c71f08b4d1e1022cd9d931dec97",
+  "development_runs_verified": 24,
+  "confirmatory_runs_completed": 0
+}

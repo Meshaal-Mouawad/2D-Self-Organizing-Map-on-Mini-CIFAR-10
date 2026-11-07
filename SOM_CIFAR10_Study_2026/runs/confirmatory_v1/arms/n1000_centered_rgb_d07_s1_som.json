@@ -1,0 +1,19 @@
+{
+  "artifact_sha256": "b85105051d92da8fbcb5f14a53854b9e1a709397280924a0811639bca672d687",
+  "budget": 1000,
+  "dev_ari": 0.03976961073883534,
+  "dev_mse": 117.72799682617188,
+  "dev_nmi": 0.09140012889615819,
+  "dev_occupied": 16,
+  "draw": 7,
+  "initialization_seconds": 0.6887855420354754,
+  "lloyd_iterations": 19,
+  "method": "som",
+  "pca_seconds": 0.0,
+  "refinement_seconds": 0.09500587498769164,
+  "representation": "centered_rgb",
+  "run_id": "n1000_centered_rgb_d07_s1_som",
+  "seed": 20261808,
+  "start": 1,
+  "train_mse": 112.4159164428711
+}

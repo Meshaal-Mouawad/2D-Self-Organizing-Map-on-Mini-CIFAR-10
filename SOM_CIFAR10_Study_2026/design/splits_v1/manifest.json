@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-11-07T11:03:45.177270+00:00",
+  "status": "candidate_not_frozen",
+  "dataset": "official CIFAR-10 training batches only",
+  "seed": 20261107,
+  "draws": 10,
+  "development_size": 5000,
+  "training_pool_size": 45000,
+  "budgets": [
+    1000,
+    5000
+  ],
+  "python": "3.12.7",
+  "numpy": "2.5.4",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "index_semantics": "zero-based indices into concatenated official data_batch_1..5",
+  "sha256_indices_npz": "17c764251b013c1d09ef4fe5ccff301db48c8c71f08b4d1e1022cd9d931dec97"
+}

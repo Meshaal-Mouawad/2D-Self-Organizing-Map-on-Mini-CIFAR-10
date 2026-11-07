@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+__MACOSX/
+data/raw/
+*.tar.gz
+full_execution.log
+controller.lock

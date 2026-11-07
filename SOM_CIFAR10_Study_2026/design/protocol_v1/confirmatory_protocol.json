@@ -1,0 +1,92 @@
+{
+  "status": "confirmatory_protocol_frozen",
+  "preprocessing": {
+    "status": "preprocessing_frozen",
+    "dataset": "CIFAR-10 official Python batches",
+    "training_pool": 45000,
+    "development_set": 5000,
+    "test_partition": "reserved",
+    "pixel_normalization": "float32 / 255.0",
+    "rgb_representation": "training-mean-centered",
+    "pca_representation": {
+      "components": 64,
+      "fit_partition": "training subset only",
+      "randomized_svd": true
+    },
+    "prototype_count": 16,
+    "methods": [
+      "som",
+      "winner",
+      "random",
+      "kmeans++"
+    ],
+    "split_sha256": "17c764251b013c1d09ef4fe5ccff301db48c8c71f08b4d1e1022cd9d931dec97",
+    "development_runs_verified": 24,
+    "confirmatory_runs_completed": 0
+  },
+  "training_budgets": [
+    1000,
+    5000
+  ],
+  "representations": [
+    "centered_rgb",
+    "pca64"
+  ],
+  "methods": [
+    "som",
+    "winner",
+    "random",
+    "kmeans++"
+  ],
+  "draws": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "starts": [
+    0,
+    1
+  ],
+  "seed_formula": "20261107 + draw * 100 + start",
+  "som_grid": [
+    4,
+    4
+  ],
+  "training_epochs": 5,
+  "learning_rate": [
+    0.5,
+    0.05
+  ],
+  "neighborhood_sigma": [
+    2.0,
+    0.5
+  ],
+  "lloyd_max_iterations": 300,
+  "lloyd_relative_shift_tolerance": 1e-06,
+  "empty_cluster_policy": "deterministic farthest residual",
+  "shared_initial_bank_and_order": [
+    "som",
+    "winner"
+  ],
+  "evaluation_metrics": [
+    "quantization_mse",
+    "adjusted_rand_index",
+    "normalized_mutual_information",
+    "prototype_occupancy",
+    "initialization_seconds",
+    "refinement_seconds",
+    "pca_seconds"
+  ],
+  "evaluation_partition": "reserved development set",
+  "test_partition": "reserved for final evaluation",
+  "checkpoint_unit": "individual method run",
+  "confirmatory_runs": 320,
+  "completed_confirmatory_runs": 0
+}

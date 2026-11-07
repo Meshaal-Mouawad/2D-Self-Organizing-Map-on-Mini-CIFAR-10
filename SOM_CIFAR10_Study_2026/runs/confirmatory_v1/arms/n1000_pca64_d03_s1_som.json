@@ -1,0 +1,19 @@
+{
+  "artifact_sha256": "e43ed2578773613834a8c3b1928dbabb8589a344eccdac11d404aa69ee5343aa",
+  "budget": 1000,
+  "dev_ari": 0.04128264919159052,
+  "dev_mse": 89.33910369873047,
+  "dev_nmi": 0.09216475913816537,
+  "dev_occupied": 16,
+  "draw": 3,
+  "initialization_seconds": 0.06387112499214709,
+  "lloyd_iterations": 13,
+  "method": "som",
+  "pca_seconds": 0.04097412503324449,
+  "refinement_seconds": 0.0031928340904414654,
+  "representation": "pca64",
+  "run_id": "n1000_pca64_d03_s1_som",
+  "seed": 20261408,
+  "start": 1,
+  "train_mse": 90.97090911865234
+}
