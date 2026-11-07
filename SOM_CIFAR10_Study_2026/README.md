@@ -21,3 +21,15 @@
 Use Python 3.12 with `requirements-frozen.txt`. Obtain the official CIFAR-10 Python version from https://www.cs.toronto.edu/~kriz/cifar.html (archive MD5: `c58f30108f718f92721af3b95e74349a`). The archive is intentionally omitted from GitHub. The controller resolves `data/`, `design/` and `runs/` relative to its own `.py` file. To reproduce from scratch, create a **separate clean working directory**, copy the archived `som_*.py` and the complete `design/` directory into it, extract CIFAR-10 to `<clean-workspace>/data/raw/cifar-10-batches-py/`, then execute `python som_confirmatory_controller_v1.py --run --all` there. The archived `runs/confirmatory_v1/` contains verified completed checkpoints for auditing and should remain unchanged.
 
 The public repository's existing `Code/` MATLAB PCA material is historical work and remains preserved outside this new study directory.
+
+
+## Reserved official-test evaluation
+
+The same 320 frozen models were subsequently evaluated on the official 10,000-image CIFAR-10 test partition. The derived per-model endpoints and paired statistical summaries are archived separately from the development-set analysis:
+
+- [Per-model test outcomes](analysis/reserved_test_v1/test_results.csv)
+- [Descriptive summaries](analysis/reserved_test_v1/test_descriptive.csv)
+- [Paired comparisons](analysis/reserved_test_v1/test_paired_comparisons.csv)
+- [Holm-adjusted primary comparisons](analysis/reserved_test_v1/test_primary_holm.csv)
+
+The test evaluation shows significant quantization reductions in three of four budget-by-representation conditions, adverse ARI differences in both 1,000-image training conditions, and no Holm-significant NMI differences. The complete per-image test evidence archive was supplied as supplementary material with the journal submission. These test results are distinct from the development-set analysis above.
