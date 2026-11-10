@@ -1,7 +1,8 @@
 # SOM neighborhood cooperation on Mini CIFAR-10 — confirmatory evidence (2026)
 
 **Author:** Meshaal Mouawad  
-**Status:** 320/320 confirmatory runs complete; development-set statistical analysis complete.  
+**Research status:** 320/320 confirmatory runs complete; official-test evaluation and statistical analysis complete.  
+**Publication status (10 November 2026):** Technical resubmission approved by author and sent to the Pattern Recognition Letters Journal Office under PRLETTERS-D-26-02894; awaiting forwarding to the Editor.  
 **Primary question:** Does neighborhood cooperation in a 4 × 4 SOM warm start affect the quantization and semantic alignment of 16 prototypes after identical Lloyd refinement?
 
 - **Study report with complete methods and statistics:** [`RESULTS.md`](RESULTS.md)
